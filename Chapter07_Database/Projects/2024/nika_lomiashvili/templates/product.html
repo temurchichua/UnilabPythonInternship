@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Product
+{% endblock  %}
+
+{% block body %}
+<div class="container rounded h-100 shadow mt-5 p-5 bg-light" style="min-height: 645px;">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/static/{{ product['img'] }}" class="img-fluid rounded" alt="{{ product['name'] }}" />
+        </div>
+
+        <div class="col-md-6">
+            <h1 class="display-4 mb-4">{{ product['name'] }}</h1>
+            <p class="lead text-muted">{{ product['description'] }}</p>
+
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th scope="row">Price</th>
+                    <td class="font-weight-bold text-success">${{ product['price'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Description</th>
+                    <td>{{ product['description'] }}</td>
+                </tr>
+            </table>
+
+            <a href="#" class="btn btn-primary btn-lg mt-4">Buy Now</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
