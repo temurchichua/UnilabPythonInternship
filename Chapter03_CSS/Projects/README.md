@@ -39,7 +39,7 @@
 - რომა გრიგალაშვილი |  [Code](/Chapter3_CSS/Projects/2024/roma_grigalashvili) | [[View]](https://htmlpreview.github.io/?https://github.com/R-Grigala/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/roma_grigalashvili/index.html)
 - საბა დვალი  |  [Code](/Chapter3_CSS/Projects/2024/Saba_Dvali) | [[View]](https://htmlpreview.github.io/?https://github.com/sabadvali4/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/Saba_Dvali/index.html)
 - ჯეკო კობახიძე | [Code](/Chapter3_CSS/Projects/2024/jekokobakhidze) | [[View]](https://htmlpreview.github.io/?https://htmlpreview.github.io/?https://github.com/Jekmen1/UnilabPythonInternship/blob/upstream/Chapter03_CSS/Projects/2024/jekokobakhidze/index.html)
-- ნიკა ლომიაშვილი | [View](https://github.com/NikaL25/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/nika_lomiashvili/index.html)
+- ნიკა ლომიაშვილი | [View](https://htmlpreview.github.io/?https://raw.githubusercontent.com/NikaL25/UnilabPythonInternship/master/Chapter03_CSS/Projects/nika_lomiashvili/register.html)
 - თინათინი როსტომაშვილი | [View](https://htmlpreview.github.io/?https://github.com/TinatiniR/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/Tinatini%20Rostomashvili/index.html)
 - ბექა კოპაძე | [View](https://htmlpreview.github.io/?https://github.com/beqaqo/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/beka_kopadze/index.html)
 

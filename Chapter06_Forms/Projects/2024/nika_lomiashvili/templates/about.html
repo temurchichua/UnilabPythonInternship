@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+ About
+{% endblock  %}
+
+
+{% block body %}
+<div id="mainCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2024/07/laptopstopicpage-2048px-3685-2x1-1.jpg?width=1024&quality=75&crop=2:1&auto=webp" class="d-block w-100" alt="Welcome">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to Our Website</h5>
+                <p>Discover amazing features and services.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets2.razerzone.com/images/pnx.assets/7fb8deac5d3c73e360bc687ed62be6cf/gaming-laptops-og-image.webp" class="d-block w-100" alt="Services">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Explore Our Services</h5>
+                <p>Learn how we can help you achieve more.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.stuff.tv/wp-content/uploads/sites/2/2021/04/Stuff-Best-Laptop-Lead.png" class="d-block w-100" alt="Join">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Join Us Today</h5>
+                <p>Become a part of our growing community.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}

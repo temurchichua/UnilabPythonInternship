@@ -22,6 +22,7 @@
 
 ### 2024 სტაჟირება
 - რომა გრიგალაშვილი | [Quick_Quiz](/Chapter06_Forms/Projects/2024/roma_grigalashvili/)
+- ნიკა ლომიაშვილი | [Service_App](/Chapter06_Forms/Projects/2024/nika_lomiashvili/)
 
 ## ინსტრუქცია:
 
