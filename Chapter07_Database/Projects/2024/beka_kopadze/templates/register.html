@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    ჩაწერა
+{% endblock %}
+
+{% block body %}
+    <div class="container-md bg-white shadow rounded-4 w-50 pt-3 p-3 mt-5 text-dark pt-2">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">სახელი</label>
+                <input type="text" class="form-control" placeholder="ლესტანბერი" id="name">
+            </div>
+            <div class="col-md-6">
+                <label for="surname" class="form-label">გვარი</label>
+                <input type="text" class="form-control" placeholder="გვარაძე" id="surname">
+            </div>
+            <div class="col-md-6">
+                <label for="petname" class="form-label">ცხოველის სახელი</label>
+                <input type="text" class="form-control" placeholder="ცუგრიკო" id="petname">
+            </div>
+            <div class="col-md-2">
+                <label for="inputState" class="form-label">ასაკი</label>
+                <select id="inputState" class="form-select">
+                    <option selected>0</option>
+                    <option> 1</option>
+                    <option> 2</option>
+                    <option> 3</option>
+                    <option> 4</option>
+                    <option> 5</option>
+                    <option> 6</option>
+                    <option> 7</option>
+                    <option> 8</option>
+                    <option> 9</option>
+                    <option> 10</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">სახეობა</label>
+                <input type="text" class="form-control" placeholder="მამონტი" id="saxeoba">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">ჯიში</label>
+                <input type="text" class="form-control" placeholder="ეშვის უგარეშოდ" id="jishi">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" name="gender" type="radio" id="gender">
+                    <label class="form-check-label" for="gridCheck">
+                        ძუ
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" name="gender" type="radio" id="gender">
+                    <label class="form-check-label" for="gridCheck">
+                        ხვადი
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">ჩაწერა</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

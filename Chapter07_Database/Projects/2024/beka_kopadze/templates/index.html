@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    მთავარი
+{% endblock %}
+
+{% block body %}
+    <div class="container-md bg-white rounded-4 p-5 m-3 mx-auto shadow">
+        <div class="row">
+            <div class="col-7 bg-primary text-white rounded-4 shadow p-3 mb-5">
+                <h1 class="display-4">ბედნიერი პაციენტები</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="../static/ratatui.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">კლინიკაში შემოიპარა და ჩუსტი ჩავარტყი, ახლა კარგადაა... უყვარს ბანაობა</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="../static/morti.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">ფსიკიკურ თერაპიაზე შევედით... ერთდროულად, მეც ასე ვარ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

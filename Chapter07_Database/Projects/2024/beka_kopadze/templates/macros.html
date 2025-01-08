@@ -1,0 +1,9 @@
+{% macro nav_logic(name, display_name) %}
+    <li class="nav-item">
+        {% if request.endpoint == name %}
+            <a class="nav-link active" aria-current="page" href="{{ url_for(name) }}">{{ display_name }}</a>
+        {% else %}
+            <a class="nav-link" aria-current="page" href="{{ url_for(name) }}">{{ display_name }}</a>
+        {% endif %}
+    </li>
+{% endmacro %}

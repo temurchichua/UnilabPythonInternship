@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    შესახებ
+{% endblock %}
+
+{% block body %}
+    <div class="container-md bg-white rounded-4 p-5 m-3 mx-auto shadow">
+        <div class="row m-2 p-1 bg-primary text-white rounded">
+            <div class="col">
+                <p class="pt-2"> არცერთი გადარჩენილი სიცოცხლე, წელიწადში 3 კლიენტი, ჩემი კატა, ქუჩის ცუგა და შემოპარული
+                    თაგვი, ჯობს არ დაგვიკავშირდეთ &#128512;</p>
+            </div>
+        </div>
+        <div class="row p-2">
+            {% for person in personal %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src={{ person.get("image") }} class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ person.get("name") }}</h5>
+                            <p class="card-text">discription</p>
+                            <a href="{{ url_for("edit_personal", personal_id = person['id']) }}" class="btn btn-primary">edit</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

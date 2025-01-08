@@ -1,0 +1,18 @@
+{% from "macros.html" import nav_logic %}
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <img src="../static/avicuga.png" alt="Bootstrap" width="50">
+            </div>
+            <div class="col p-2">
+                <ul class="nav nav-pills">
+                    {{ nav_logic("index", "მთავარი") }}
+                    {{ nav_logic("about", "შესახებ") }}
+                    {{ nav_logic("register", "ჩაწერა") }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

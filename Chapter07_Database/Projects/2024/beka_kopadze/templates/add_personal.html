@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    პერსონალის დამატება
+{% endblock %}
+
+{% block body %}
+    <div class="container-md bg-white shadow rounded-4 w-50 pt-3 p-3 mt-5 text-dark pt-2">
+        {% for field, errors in form.errors.items() %}
+            {% for error in errors %}
+                <div class="alert alert-warning alert-danger fade show" role="alert">
+                    <strong>{{ error }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <form class="row g-3" method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="col-md-6">
+                <label for="name" class="form-label">{{ form.name.label }}</label>
+                {{ form.name(class="form-control", placeholder = "მაყვალა") }}
+            </div>
+            <div class="col-md-6">
+                <label for="surname" class="form-label">{{ form.surname.label }}</label>
+                {{ form.surname(class="form-control", placeholder = "მაყვალაშვილი") }}
+            </div>
+            <div class="col-md-6">
+                <label for="image" class="form-label">{{ form.image.label }}</label>
+                {{ form.image(class="form-control", accept = ".jpg,.png,.jpeg") }}
+            </div>
+            <div class="col-12">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </div>
+{% endblock %}
