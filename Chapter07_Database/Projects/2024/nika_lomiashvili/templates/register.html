@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+Register
+{% endblock  %}
+
+
+{% block body %}
+<div class="container d-flex justify-content-center mt-5">
+
+<form class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5" method="POST" style="min-height: 580px;">
+ <h1 class="d-flex justify-content-center">Register</h1>
+              {% for field , errors in form.errors.items() %}
+                {% for error in errors %}
+                    <div class="alert alert-danger">{{error}}</div>
+                {% endfor %}
+             {% endfor %}
+
+           {{ form.hidden_tag() }}
+
+            <div class="row mb-3">
+                {{ form.username(class="form-control") }}
+            </div>
+            <div class="row mb-3">
+                {{ form.password(class="form-control") }}
+            </div>
+            <div class="row mb-3">
+               {{ form.repeat_password(class="form-control") }}
+            </div>
+
+             <div class="row mb-3">
+               {{ form.gender(class="form-check") }}
+            </div>
+
+             <div class="row mb-3">
+               {{ form.country(class="form-select") }}
+            </div>
+             <div class="row mb-3">
+               {{ form.birthday(class="form-control") }}
+            </div>
+
+             <div class="row mb-3">
+               {{ form.about_you(class="form-control") }}
+            </div>
+
+            {{ form.submit(class="btn btn-primary") }}
+
+        </form>
+
+    </div>
+
+
+
+    {% endblock %}

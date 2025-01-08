@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Add Service
+{% endblock  %}
+
+{% block body %}
+<div class="container rounded h-100 shadow mt-5 p-5 bg-light d-flex justify-content-center" style="min-height: 645px;">
+
+    <form class="col-5 mt-5" method="POST" enctype="multipart/form-data">
+        {% for field, errors in form.errors.items() %}
+            {% for error in errors %}
+                <div class="alert alert-danger">{{ error }}</div>
+            {% endfor %}
+        {% endfor %}
+
+        <h1 class="d-flex justify-content-center">Service</h1>
+
+        {{ form.hidden_tag() }}
+
+        <div class="row mb-3">
+            {{ form.name(class="form-control", placeholder=form.name.label.text) }}
+        </div>
+
+        <div class="row mb-3">
+            {{ form.price(class="form-control", placeholder=form.price.label.text) }}
+        </div>
+
+        <div class="row mb-3">
+            {{ form.description(class="form-control", placeholder=form.description.label.text) }}
+        </div>
+
+        <div class="row mb-3">
+            {{ form.img(class="form-control", placeholder=form.img.label.text, accept=".jpg,.png,.jpeg") }}
+        </div>
+
+        {% if product and product['img'] %}
+        <div class="row mb-3">
+            <img src="{{ url_for('static', filename=product['img']) }}" class="img-fluid" alt="Product Image">
+        </div>
+        {% endif %}
+
+        <div class="row">
+            {{ form.submit(class="btn btn-primary w-100") }}
+        </div>
+    </form>
+</div>
+
+{% endblock %}

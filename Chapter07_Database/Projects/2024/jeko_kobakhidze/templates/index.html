@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Register New User</h1>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="flash-message">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            {{ form.hidden_tag() }}
+
+            <p>
+                {{ form.username.label }}<br>
+                {{ form.username(class_="form-control") }}
+            </p>
+
+            <p>
+                {{ form.email.label }}<br>
+                {{ form.email(class_="form-control") }}
+            </p>
+
+            <p>{{ form.submit(class_="btn btn-primary") }}</p>
+        </form>
+
+        <h2>Registered Users</h2>
+        <ul>
+            {% for user in users %}
+                <li>{{ user.username }} ({{ user.email }})</li>
+            {% else %}
+                <p>No users registered yet.</p>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

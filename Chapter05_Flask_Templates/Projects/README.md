@@ -38,6 +38,9 @@
 - რომა გრიგალაშვილი | [Flask_templates](/Chapter05_Flask_Templates/Projects/2024/roma_grigalashvili/)
 - ირაკლი წურწუმია | [Flask_template](/Chapter05_Flask_Templates/Projects/2024/irakli_tsurtsumia/)
 
+
+- ნიკა ლომიაშვილი | [Flask_template](/Chapter05_Flask_Templates/Projects/2024/nika_lomaishvili/)
+
 ## ინსტრუქცია:
 
 1. წინა თავში შესრულებულ ან სრულიად ახალ ვებ გვერდს გაუკეთეთ საბაზისო გვერდი jinja2-სა და Bootstrap-ის გამოყენებით.

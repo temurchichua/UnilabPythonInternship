@@ -1,0 +1,7 @@
+{% macro create_navlink(name, display_name) %}
+    {% if request.endpoint == name %}
+        <li class="nav-item"><a class="nav-link active" href="{{ url_for(name) }}">{{ display_name }}</a></li>
+    {% else %}
+        <li class="nav-item"><a class="nav-link" href="{{ url_for(name) }}">{{ display_name }}</a></li>
+    {% endif %}
+{% endmacro %}

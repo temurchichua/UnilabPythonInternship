@@ -36,12 +36,10 @@
 ### 2024 სტაჟირება
 - გვანცა მანთაშაშვილი | [Conference&Seminars_page](Chapter03_CSS/Projects/2024/gvantsa_mantashashvili/Conference&Seminars_page) | [[View]](https://htmlpreview.github.io/?https://github.com/Gvantsa001/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/gvantsa_mantashashvili/Conference%26Seminars_page/index.html)
 - ვანო ინიაშვილი | [RateMovie](/Chapter03_CSS/Projects/2024/Vano_Iniashvili/) | [View](https://htmlpreview.github.io/?https://github.com/VanoIniashvili/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/Vano_Iniashvili/index.html) 
-- რომა გრიგალაშვილი |  [Cheetah](/Chapter3_CSS/Projects/2024/roma_grigalashvili) | [[View]](https://htmlpreview.github.io/?https://github.com/R-Grigala/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/roma_grigalashvili/index.html)
-- საბა დვალი  |  [Cheetah](/Chapter3_CSS/Projects/2024/Saba_Dvali) | [[View]](https://htmlpreview.github.io/?https://github.com/sabadvali4/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/Saba_Dvali/index.html)
-- ჯეკო კობახიძე | [Cheetah](/Chapter3_CSS/Projects/2024/jekokobakhidze) | [[View]](https://htmlpreview.github.io/?https://htmlpreview.github.io/?https://github.com/Jekmen1/UnilabPythonInternship/blob/upstream/Chapter03_CSS/Projects/2024/jekokobakhidze/index.html)
-
 - ნიკა ლომიაშვილი | [[View]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/NikaL25/UnilabPythonInternship/master/Chapter03_CSS/Projects/nika_lomiashvili/register.html)
-- 
+- თინათინი როსტომაშვილი | [View](https://htmlpreview.github.io/?https://github.com/TinatiniR/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/Tinatini%20Rostomashvili/index.html)
+- ბექა კოპაძე | [View](https://htmlpreview.github.io/?https://github.com/beqaqo/UnilabPythonInternship/blob/master/Chapter03_CSS/Projects/2024/beka_kopadze/index.html)
+
 ## ინსტრუქცია:
 
 წინა თავში შესრულებულ ან სრულიად ახალ ვებ გვერდს გაუკეთეთ სტილი css-ის გამოყენებით
