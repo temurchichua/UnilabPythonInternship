@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{%block title%}
+Sign In
+{%endblock%}
+
+{%block body%}
+<div class="container rounded bg-warning mt-5 p-4">
+    <form method="POST" , class="d-flex flex-column gap-1">
+        {{form.hidden_tag()}}
+        <div class="row">
+            {{form.first_name(placeholder=form.first_name.label.text, class="form-control")}}
+        </div>
+        <div class="row">
+            {{form.last_name(placeholder=form.last_name.label.text, class="form-control")}}
+        </div>
+        <div class="row">
+            {{form.username(placeholder=form.username.label.text, class="form-control")}}
+        </div>
+        <div class="row">
+            {{form.submit(class="bg-info")}}
+        </div>
+    </form>
+</div>
+{%endblock%}
